@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 
 	Xepoll xepoll;//初始化事件模型
 
-    TouchScreen remote(&xepoll, nullptr);
+    TouchScreen touch(&xepoll, nullptr);
 
     return xepoll.loop();//等待事件触发
 }

@@ -2,3 +2,6 @@ build
 .vscode
 *.o
 touchscreen
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake

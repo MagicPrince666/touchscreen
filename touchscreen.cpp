@@ -45,7 +45,7 @@ TouchScreen::~TouchScreen(void)
     }
 }
 
-int TouchScreen::IRKey(void)
+int TouchScreen::ReadTouchData(void)
 {
     struct timeval		time;
     struct input_event	event;
@@ -101,7 +101,7 @@ bool TouchScreen::init() {
   // 绑定回调函数
   if (key_input_fd_ > 0) {
         std::cout << "Bind epoll" << std::endl;
-        epoll_->add(key_input_fd_, std::bind(&TouchScreen::IRKey, this));
+        epoll_->add(key_input_fd_, std::bind(&TouchScreen::ReadTouchData, this));
   }
   return true;
 }

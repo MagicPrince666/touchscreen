@@ -11,7 +11,7 @@ public:
     ~TouchScreen();
 
     bool init();
-    int IRKey();
+    int ReadTouchData();
 
 private:
     Xepoll *epoll_;

@@ -1,4 +1,4 @@
-CXX := /home/leo/H3/xos/output/host/bin/arm-neo-linux-gnueabihf-g++
+# CXX := /home/leo/H3/xos/output/host/bin/arm-neo-linux-gnueabihf-g++
 
 TARGET	= touchscreen
 
